@@ -1,0 +1,8 @@
+<% blog.articles.each_with_index do |article, i| %>
+  <article class="blog-post-summary">
+    <time datetime="<%= article.date %>"><%= article.date.strftime('%b %e') %></time>
+    <h2><a href="<%= article.url %>"><%= article.title %></h2>
+    <%= article.summary %>
+    <%= link_to "Read more...", article %>
+  </article>
+<% end %>
