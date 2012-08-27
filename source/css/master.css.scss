@@ -2,106 +2,14 @@
 @import "compass";
 @import "modular-scale";
 
-@import "_colors";
-@import "_grid";
-@import "_typography";
+@import "colors";
+@import "grid";
+@import "typography";
 
-
-.wip {
-  background-color: $color-link;
-  border-bottom: 1px solid darken($color-bg, 10%);
-  .content {
-    text-align: center;
-    h3 {
-      color: #ffffff;
-    }
-  }
-}
-
-::selection {
-  background: $color-link;
-  color: $color-bg;
-}
-
-body {
-  @include font-sans;
-  background: $color-bg;
-  color: $color-base;
-  font-size: ms(0);
-  line-height: ms(0) * golden();
-  margin-bottom: ms(0) * 0.5;
-}
-h1 {
-  font-size: ms(2);
-  line-height: ms(2) * golden();
-  margin-bottom: ms(2) * 0.5;
-}
-h2 {
-  font-size: ms(1);
-  line-height: ms(1) * golden();
-  margin-bottom: ms(1) * 0.5;
-}
-h3 {
-  font-size: ms(0);
-  line-height: ms(0) * golden();
-  margin-bottom: ms(0) * 0.5;
-}
-h1, h2, h3 {
-  @include font-mono;
-  color: $color-darker;
-}
-a {
-  color: $color-link;
-  text-decoration: none;
-  @include transition-duration(0.5s);
-  @include transition-property(color);
-  @include transition-timing-function(ease-out);
-  &:hover {
-    color: darken($color-link, 20%);
-  }
-}
-p {
-  @include trailer();
-  &:last-child {
-    margin: 0;
-  }
-}
-pre {
-  @include font-mono;
-  @include trailer();
-  background-color: $color-bg;
-  border: 1px solid darken($color-bg, 10%);
-  overflow: auto;
-  padding: 10px;
-}
-code {
-  @include font-mono;
-  background-color: $color-bg;
-}
-
-strong {
-  font-weight: bold;
-}
-em {
-  font-style: italic;
-}
-li {
-  list-style-type: disc;
-  margin-left: 40px;
-}
-
-#main {
-  background-image: image-url("subtlenet2.png");
-  padding: 20px 0;
-  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-    background-image: image-url("subtlenet2_@2X.png");
-  }
-}
-.content {
-  @include container;
-}
-
+@import "base/base";
 @import "base/header";
+@import "base/content";
 @import "base/footer";
 
+/* modules */
 @import "blog/blog";

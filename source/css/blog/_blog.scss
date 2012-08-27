@@ -18,15 +18,15 @@ article.blog-post-summary {
 
 article.blog-post {
   header {
-    @include span-columns(12, 12);
+    @include span-columns(8, 8);
     display: block;
     .title {
-      @include span-columns(12, 12);
+      @include span-columns(8, 8);
       margin: 0;
     }
   }
   .copy {
-    @include span-columns(12, 12);
+    @include span-columns(8, 8);
     border-bottom: 1px solid darken($color-bg, 10%);
     border-top: 1px solid darken($color-bg, 10%);
     margin-bottom: ms(3) * 0.5;
@@ -34,6 +34,6 @@ article.blog-post {
     padding-top: ms(3) * 0.5;
   }
   .comments {
-    @include span-columns(12, 12);
+    @include span-columns(8, 8);
   }
 }
