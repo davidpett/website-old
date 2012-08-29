@@ -10,7 +10,7 @@ article.blog-post-summary {
     border-bottom: none;
   }
   time {
-    @include font-mono;
+    @include font-header;
     font-size: 13px;
     text-transform: uppercase;
   }
@@ -18,15 +18,15 @@ article.blog-post-summary {
 
 article.blog-post {
   header {
-    @include span-columns(8, 8);
+    @include span-columns(12, 12);
     display: block;
     .title {
-      @include span-columns(8, 8);
+      @include span-columns(12, 12);
       margin: 0;
     }
   }
   .copy {
-    @include span-columns(8, 8);
+    @include span-columns(12, 12);
     border-bottom: 1px solid darken($color-bg, 10%);
     border-top: 1px solid darken($color-bg, 10%);
     margin-bottom: ms(3) * 0.5;
@@ -34,6 +34,6 @@ article.blog-post {
     padding-top: ms(3) * 0.5;
   }
   .comments {
-    @include span-columns(8, 8);
+    @include span-columns(12, 12);
   }
 }

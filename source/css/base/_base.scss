@@ -11,6 +11,10 @@ body {
   line-height: ms(0) * golden();
   margin-bottom: ms(0) * 0.5;
 }
+h1, h2, h3 {
+  @include font-header;
+  color: $color-base;
+}
 h1 {
   font-size: ms(2);
   line-height: ms(2) * golden();
@@ -25,10 +29,7 @@ h3 {
   font-size: ms(0);
   line-height: ms(0) * golden();
   margin-bottom: ms(0) * 0.5;
-}
-h1, h2, h3 {
-  @include font-mono;
-  color: $color-darker;
+  text-transform: uppercase;
 }
 a {
   color: $color-link;
@@ -60,7 +61,7 @@ code {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 em {
   font-style: italic;

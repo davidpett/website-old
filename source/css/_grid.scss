@@ -1,9 +1,11 @@
 @import "susy";
 
-$total-columns: 12;
 $column-width: 3em;
-$gutter-width: 1em;
 $grid-padding: $gutter-width;
+$gutter-width: 1em;
+$total-columns: 12;
+
+@include border-box-sizing;
 
 .container {
   @include container;
